@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Learner-Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon">LV</div>
+                <div>Learner-<span>Vault</span></div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="resources.html">Resources</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="profile.html" class="btn btn-outline btn-sm">Dev Padaliya</a>
+                <a href="login.html" class="btn btn-ghost btn-sm">Sign Out</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-wrapper">
+
+        <!-- Sidebar Navigation -->
+        <aside class="dash-sidebar">
+            <div class="sidebar-menu">
+                <a href="dashboard.html" class="active">📊 Overview</a>
+                <a href="courses.html">📚 My Courses</a>
+                <a href="resources.html">📁 Resource Vault</a>
+                <a href="quiz.html">✍️ Practice Quizzes</a>
+                <a href="profile.html">👤 Student Profile</a>
+
+            </div>
+            <div
+                style="padding: 16px; background: var(--bg-surface-alt); border-radius: var(--radius-md); font-size: 0.8125rem;">
+                <div style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Student ID: 9261012</div>
+                <div class="text-muted">B.Tech CSE • Sem 6</div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Content -->
+        <main class="dash-content">
+
+            <!-- Welcome Header -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px;">
+                <div>
+                    <h2>Welcome back, Dev! 👋</h2>
+                    <p>Track your semester progress, upcoming lecture topics, and quiz evaluations.</p>
+                </div>
+                <a href="courses.html" class="btn btn-primary btn-sm">+ Enroll Course</a>
+            </div>
+
+            <!-- Academic Metrics Cards -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--primary-light); color: var(--primary);">📚</div>
+                    <div>
+                        <div class="value">6</div>
+                        <div class="label">Enrolled Courses</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--success-light); color: var(--success);">✓</div>
+                    <div>
+                        <div class="value">42</div>
+                        <div class="label">Completed Topics</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--accent-light); color: var(--accent);">⏱️</div>
+                    <div>
+                        <div class="value">58h</div>
+                        <div class="label">Study Time</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--warning-light); color: var(--warning);">🏆</div>
+                    <div>
+                        <div class="value">88%</div>
+                        <div class="label">Quiz Average</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Columns -->
+            <div class="dash-columns">
+
+                <!-- Left Column: Continue Learning & Chart -->
+                <div>
+                    <h3 style="margin-bottom: 16px;">Continue Learning</h3>
+
+                    <!-- Course 1 -->
+                    <div class="dash-course-item">
+                        <div style="flex: 1;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <span class="badge badge-purple">Web Tech</span>
+                                <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary);">65%</span>
+                            </div>
+                            <div
+                                style="font-weight: 700; font-size: 0.9375rem; color: var(--text-main); margin-bottom: 4px;">
+                                Web Technology & Design</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 8px;">Next: Unit
+                                3 • CSS Grid Layouts</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-outline btn-sm">Resume</a>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="dash-course-item">
+                        <div style="flex: 1;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <span class="badge badge-cyan">Database</span>
+                                <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary);">80%</span>
+                            </div>
+                            <div
+                                style="font-weight: 700; font-size: 0.9375rem; color: var(--text-main); margin-bottom: 4px;">
+                                Database Systems & SQL</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 8px;">Next: Unit
+                                4 • ACID Transactions</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-outline btn-sm">Resume</a>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="dash-course-item">
+                        <div style="flex: 1;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <span class="badge badge-green">Programming</span>
+                                <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary);">40%</span>
+                            </div>
+                            <div
+                                style="font-weight: 700; font-size: 0.9375rem; color: var(--text-main); margin-bottom: 4px;">
+                                Java OOP & Architecture</div>
+                            <div style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 8px;">Next: Unit
+                                2 • Abstract Classes</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-outline btn-sm">Resume</a>
+                    </div>
+
+                    <!-- Pure CSS Weekly Hours Bar Chart -->
+                    <div class="chart-container">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                            <h4 style="font-size: 1rem;">Weekly Study Hours</h4>
+                            <span class="badge badge-purple">Total: 18.5 hrs</span>
+                        </div>
+                        <div class="css-bar-chart">
+                            <div class="bar-col">
+                                <div class="bar-rect" style="height: 45%;"></div>
+                                <span class="bar-label">Mon</span>
+                            </div>
+                            <div class="bar-col">
+                                <div class="bar-rect" style="height: 70%;"></div>
+                                <span class="bar-label">Tue</span>
+                            </div>
+                            <div class="bar-col">
+                                <div class="bar-rect" style="height: 60%;"></div>
+                                <span class="bar-label">Wed</span>
+                            </div>
+                            <div class="bar-col">
+                                <div class="bar-rect" style="height: 90%;"></div>
+                                <span class="bar-label">Thu</span>
+                            </div>
+                            <div class="bar-col">
+                                <div class="bar-rect" style="height: 50%;"></div>
+                                <span class="bar-label">Fri</span>
+                            </div>
+                            <div class="bar-col">
+                                <div class="bar-rect" style="height: 80%;"></div>
+                                <span class="bar-label">Sat</span>
+                            </div>
+                            <div class="bar-col">
+                                <div class="bar-rect" style="height: 35%;"></div>
+                                <span class="bar-label">Sun</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Recent Activity & Quick Links -->
+                <div>
+                    <h3 style="margin-bottom: 16px;">Recent Activity</h3>
+                    <div class="detail-card" style="padding: 24px; margin-bottom: 24px;">
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-dot"></div>
+                                <div>
+                                    <div class="title">Completed Topic: "CSS Box Model"</div>
+                                    <div class="time">Today, 10:15 AM • Web Tech</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: var(--success);"></div>
+                                <div>
+                                    <div class="title">Scored 90% in Web Tech Quiz</div>
+                                    <div class="time">Yesterday • Practice Assessment</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: var(--accent);"></div>
+                                <div>
+                                    <div class="title">Downloaded DBMS SQL Cheat Sheet</div>
+                                    <div class="time">2 days ago • Resource Vault</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot"></div>
+                                <div>
+                                    <div class="title">Finished Unit 1 Notes: Java OOP</div>
+                                    <div class="time">3 days ago • Programming</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Academic Actions -->
+                    <div class="detail-card" style="padding: 24px;">
+                        <h4 style="margin-bottom: 14px; font-size: 1rem;">Quick Tools</h4>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <a href="quiz.html" class="btn btn-outline btn-full btn-sm">Take Daily Quiz</a>
+                            <a href="resources.html" class="btn btn-outline btn-full btn-sm">Browse Lecture Notes</a>
+                            <a href="profile.html" class="btn btn-outline btn-full btn-sm">View My Profile</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <div class="brand-icon">LV</div>
+                        <div>Learner-<span>Vault</span></div>
+                    </div>
+                    <p style="font-size: 0.875rem;">A clean, student-centric academic repository built with pure HTML
+                        and CSS.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Student Portal</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Administration</h4>
+                    <ul>
+                        <li><a href="admin-dashboard.html">Admin Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-bottom">
+                        <span>&copy; 2026 Learner-Vault • Course Catalog</span>
+                        <a href="dashboard.html" class="btn btn-outline btn-sm">Back to Dashboard</a>
+                    </div>
+                </div>
+            </footer>
+
+</body>
+
+</html>
