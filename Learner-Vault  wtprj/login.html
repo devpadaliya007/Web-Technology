@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Learner-Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: var(--bg-body);">
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon">LV</div>
+                <div>Learner-<span>Vault</span></div>
+            </a>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-ghost btn-sm">← Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Auth Form Container -->
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="brand-icon" style="margin: 0 auto 16px;">LV</div>
+                <h2>Student Sign In</h2>
+                <p>Enter your academic credentials to access your courses.</p>
+            </div>
+
+            <form action="dashboard.html" method="get">
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-control" placeholder="student@learnervault.edu" value="devpadaliya@learnervault.edu" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="••••••••" value="password123" required>
+                </div>
+
+                <div class="form-row">
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="checkbox" checked>
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" style="color: var(--primary); font-weight: 600;">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" style="margin-bottom: 16px;">Sign In to Portal</button>
+
+                <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                    <a href="dashboard.html" class="btn btn-outline btn-full btn-sm">Demo Student</a>
+                    <a href="admin-dashboard.html" class="btn btn-outline btn-full btn-sm">Demo Admin</a>
+                </div>
+
+                <div class="text-center" style="font-size: 0.875rem;">
+                    <span class="text-muted">Don't have an account?</span>
+                    <a href="register.html" style="font-weight: 700; margin-left: 4px;">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

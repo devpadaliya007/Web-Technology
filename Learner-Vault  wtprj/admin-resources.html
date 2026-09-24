@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Vault Resources | Admin Suite</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="admin-dashboard.html" class="brand-logo">
+                <div class="brand-icon" style="background: var(--text-main);">LV</div>
+                <div>Learner-<span>Vault</span> <span class="badge badge-purple" style="font-size: 0.6875rem;">ADMIN</span></div>
+            </a>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Wrapper Layout -->
+    <div class="dashboard-wrapper">
+        
+        <!-- Admin Sidebar -->
+        <aside class="dash-sidebar">
+            <div class="sidebar-menu">
+                <a href="admin-dashboard.html">📊 Overview</a>
+                <a href="admin-courses.html">📚 Manage Courses</a>
+                <a href="admin-resources.html" class="active">📁 Manage Resources</a>
+                <a href="admin-users.html">👥 Manage Students</a>
+                <a href="dashboard.html">🎓 Student View</a>
+            </div>
+            <div style="padding: 16px; background: var(--bg-surface-alt); border-radius: var(--radius-md); font-size: 0.8125rem;">
+                <div style="font-weight: 700; color: var(--text-main); margin-bottom: 2px;">Vault Storage</div>
+                <div class="text-muted">Total Files: 142</div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="dash-content">
+            
+            <!-- Page Header -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+                <div>
+                    <h2>Vault Resource Management</h2>
+                    <p>Upload lecture notes, reference PDFs, cheatsheets, and manage student downloads.</p>
+                </div>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <input type="text" class="search-input" placeholder="Search resources...">
+                    <a href="#upload-resource" class="btn btn-primary btn-sm">+ Upload File</a>
+                </div>
+            </div>
+
+            <!-- Resources Data Table -->
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Resource Title</th>
+                            <th>Subject</th>
+                            <th>Category</th>
+                            <th>Format & Size</th>
+                            <th>Downloads</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: 700;">HTML5 & CSS3 Master Notes</td>
+                            <td>WT-301</td>
+                            <td><span class="badge badge-purple">Lecture Notes</span></td>
+                            <td>PDF • 4.2 MB</td>
+                            <td>428</td>
+                            <td style="display: flex; gap: 6px;">
+                                <a href="resources.html" class="btn btn-outline btn-sm">View</a>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700;">CSS Grid & Flexbox Cheatsheet</td>
+                            <td>WT-301</td>
+                            <td><span class="badge badge-cyan">Cheat Sheet</span></td>
+                            <td>PDF • 1.1 MB</td>
+                            <td>612</td>
+                            <td style="display: flex; gap: 6px;">
+                                <a href="resources.html" class="btn btn-outline btn-sm">View</a>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700;">Java OOP Concepts & Design</td>
+                            <td>JAVA-204</td>
+                            <td><span class="badge badge-green">Lecture Notes</span></td>
+                            <td>PDF • 3.8 MB</td>
+                            <td>319</td>
+                            <td style="display: flex; gap: 6px;">
+                                <a href="resources.html" class="btn btn-outline btn-sm">View</a>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700;">SQL Queries & Joins Cheatsheet</td>
+                            <td>DBMS-105</td>
+                            <td><span class="badge badge-yellow">Cheat Sheet</span></td>
+                            <td>PDF • 1.4 MB</td>
+                            <td>540</td>
+                            <td style="display: flex; gap: 6px;">
+                                <a href="resources.html" class="btn btn-outline btn-sm">View</a>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700;">WT Semester 6 End-Sem Paper</td>
+                            <td>WT-301</td>
+                            <td><span class="badge badge-purple">Exam Paper</span></td>
+                            <td>PDF • 2.6 MB</td>
+                            <td>780</td>
+                            <td style="display: flex; gap: 6px;">
+                                <a href="resources.html" class="btn btn-outline btn-sm">View</a>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 700;">Web Technology Practical Manual</td>
+                            <td>WT-301</td>
+                            <td><span class="badge badge-cyan">Lab Manual</span></td>
+                            <td>PDF • 5.1 MB</td>
+                            <td>390</td>
+                            <td style="display: flex; gap: 6px;">
+                                <a href="resources.html" class="btn btn-outline btn-sm">View</a>
+                                <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Upload Resource Form Card -->
+            <div id="upload-resource" class="detail-card">
+                <h3>Upload New Academic Material</h3>
+                <form action="admin-resources.html" method="get" style="margin-top: 20px;">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="form-label">Material Title</label>
+                            <input type="text" class="form-control" placeholder="e.g. Unit 3 CSS Grid Guide" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="form-label">Target Subject</label>
+                            <select class="form-control">
+                                <option>WT-301: Web Technology</option>
+                                <option>JAVA-204: Java OOP</option>
+                                <option>DBMS-105: Database Systems</option>
+                                <option>DSA-201: Data Structures</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="form-label">Material Type</label>
+                            <select class="form-control">
+                                <option>Lecture Notes</option>
+                                <option>Cheat Sheet</option>
+                                <option>Exam Paper</option>
+                                <option>Lab Manual</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="form-label">Select Document File</label>
+                            <input type="file" class="form-control">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label class="form-label">Target Audience / Semester</label>
+                            <select class="form-control">
+                                <option>Semester 6</option>
+                                <option>Semester 5</option>
+                                <option>All Semesters</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: flex-end; gap: 12px;">
+                        <button type="reset" class="btn btn-outline btn-sm">Clear</button>
+                        <button type="submit" class="btn btn-primary btn-sm">Upload Material →</button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>

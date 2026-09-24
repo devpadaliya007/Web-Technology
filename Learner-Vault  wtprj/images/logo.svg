@@ -1,0 +1,19 @@
+﻿<svg xmlns=http://www.w3.org/2000/svg viewBox=0 0 48 48 width=48 height=48 fill=none>
+  <!-- Rounded Background Shield / Vault -->
+  <rect width=48 height=48 rx=12 fill=#6C5CE7/>
+  <rect x=2 y=2 width=44 height=44 rx=10 stroke=#A29BFE stroke-width=1.5 stroke-opacity=0.4/>
+  
+  <!-- Vault Dial / Glow Ring -->
+  <circle cx=24 cy=24 r=14 stroke=#FFFFFF stroke-width=1.5 stroke-dasharray=3 3 stroke-opacity=0.5/>
+
+  <!-- Open Book Wings / Knowledge Vault -->
+  <path d=M24 16C21 13.5 16.5 13.5 14 15V31C16.5 29.5 21 29.5 24 32C27 29.5 31.5 29.5 34 31V15C31.5 13.5 27 13.5 24 16Z 
+        fill=#FFFFFF fill-opacity=0.15 stroke=#FFFFFF stroke-width=2 stroke-linecap=round stroke-linejoin=round/>
+  
+  <!-- Center Book Spine / Vault Core -->
+  <path d=M24 16V32 stroke=#FFFFFF stroke-width=2 stroke-linecap=round/>
+  
+  <!-- Central Sparkle / Keyhole Motif -->
+  <circle cx=24 cy=22 r=2.5 fill=#FFD166/>
+  <path d=M24 24.5V27.5 stroke=#FFD166 stroke-width=2 stroke-linecap=round/>
+</svg>

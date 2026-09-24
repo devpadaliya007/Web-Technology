@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Student Account | Learner-Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background: var(--bg-body);">
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon">LV</div>
+                <div>Learner-<span>Vault</span></div>
+            </a>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-ghost btn-sm">Already registered? Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Container -->
+    <div class="auth-wrapper">
+        <div class="auth-card" style="max-width: 500px;">
+            <div class="auth-header">
+                <div class="brand-icon" style="margin: 0 auto 16px;">LV</div>
+                <h2>Student Registration</h2>
+                <p>Create your Learner-Vault account to access course materials.</p>
+            </div>
+
+            <form action="dashboard.html" method="get">
+                <div class="form-group">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="e.g. Dev Padaliya" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">University Email Address</label>
+                    <input type="email" class="form-control" placeholder="student@college.edu" required>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label class="form-label">Department</label>
+                        <select class="form-control">
+                            <option>Computer Science</option>
+                            <option>Information Tech</option>
+                            <option>Electronics</option>
+                            <option>Mechanical</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label class="form-label">Current Semester</label>
+                        <select class="form-control">
+                            <option>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option selected>Semester 6</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Create Password</label>
+                    <input type="password" class="form-control" placeholder="At least 8 characters" required>
+                </div>
+
+                <div class="form-group">
+                    <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.8125rem; color: var(--text-muted); cursor: pointer;">
+                        <input type="checkbox" required style="margin-top: 4px;">
+                        <span>I agree to the college academic guidelines and terms of use.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" style="margin-bottom: 20px;">Complete Registration →</button>
+
+                <div class="text-center" style="font-size: 0.875rem;">
+                    <span class="text-muted">Already have an account?</span>
+                    <a href="login.html" style="font-weight: 700; margin-left: 4px;">Sign In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
