@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Learner-Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="admin-dashboard.html" class="brand-logo">
+                <div class="brand-icon" style="background: var(--text-main);">LV</div>
+                <div>Learner-<span>Vault</span> <span class="badge badge-purple"
+                        style="font-size: 0.6875rem;">ADMIN</span></div>
+            </a>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+                <a href="login.html" class="btn btn-ghost btn-sm">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Wrapper Layout -->
+    <div class="dashboard-wrapper">
+
+        <!-- Admin Sidebar -->
+        <aside class="dash-sidebar">
+            <div class="sidebar-menu">
+                <a href="admin-dashboard.html" class="active">📊 Overview</a>
+                <a href="admin-courses.html">📚 Manage Courses</a>
+                <a href="admin-resources.html">📁 Manage Resources</a>
+                <a href="admin-users.html">👥 Manage Students</a>
+
+            </div>
+            <div
+                style="padding: 16px; background: var(--bg-surface-alt); border-radius: var(--radius-md); font-size: 0.8125rem;">
+                <div style="font-weight: 700; color: var(--text-main); margin-bottom: 2px;">Faculty Administrator</div>
+                <div class="text-muted">admin@learnervault.edu</div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="dash-content">
+
+            <!-- Page Header -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px;">
+                <div>
+                    <h2>Administration Dashboard</h2>
+                    <p>System overview, academic metrics, and quick control shortcuts.</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <a href="admin-courses.html#add-course" class="btn btn-primary btn-sm">+ Add Course</a>
+                    <a href="admin-resources.html#upload-resource" class="btn btn-outline btn-sm">+ Upload File</a>
+                </div>
+            </div>
+
+            <!-- Key System Metrics -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--primary-light); color: var(--primary);">👥</div>
+                    <div>
+                        <div class="value">485</div>
+                        <div class="label">Enrolled Students</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--accent-light); color: var(--accent);">📚</div>
+                    <div>
+                        <div class="value">18</div>
+                        <div class="label">Active Courses</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--success-light); color: var(--success);">📁</div>
+                    <div>
+                        <div class="value">142</div>
+                        <div class="label">Vault Resources</div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-icon" style="background: var(--warning-light); color: var(--warning);">✍️</div>
+                    <div>
+                        <div class="value">1,240</div>
+                        <div class="label">Quiz Completions</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two-Column Quick Panel -->
+            <div class="dash-columns">
+
+                <!-- Left Column: Recent Courses & Quick Add -->
+                <div>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <h3>Active Course Directory</h3>
+                        <a href="admin-courses.html" style="font-size: 0.875rem; font-weight: 600;">View All →</a>
+                    </div>
+
+                    <div class="table-container" style="margin-bottom: 28px;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Code</th>
+                                    <th>Title</th>
+                                    <th>Instructor</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="font-weight: 700;">WT-301</td>
+                                    <td>Web Technology & Design</td>
+                                    <td>Prof. Sarah Jenkins</td>
+                                    <td><span class="badge badge-green">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 700;">JAVA-204</td>
+                                    <td>Java OOP & Architecture</td>
+                                    <td>Dr. Robert Chen</td>
+                                    <td><span class="badge badge-green">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 700;">DBMS-105</td>
+                                    <td>Database Systems & SQL</td>
+                                    <td>Prof. R. N. Iyer</td>
+                                    <td><span class="badge badge-green">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 700;">DSA-201</td>
+                                    <td>Data Structures & Algorithms</td>
+                                    <td>Er. Vikram Sengupta</td>
+                                    <td><span class="badge badge-green">Active</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Quick System Actions -->
+                    <div class="detail-card" style="padding: 24px;">
+                        <h4 style="margin-bottom: 16px; font-size: 1rem;">Admin Quick Navigation</h4>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;">
+                            <a href="admin-courses.html" class="btn btn-outline btn-full btn-sm">Manage Courses</a>
+                            <a href="admin-resources.html" class="btn btn-outline btn-full btn-sm">Manage Vault</a>
+                            <a href="admin-users.html" class="btn btn-outline btn-full btn-sm">Manage Students</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: System Logs & Stats -->
+                <div>
+                    <h3 style="margin-bottom: 16px;">Recent System Events</h3>
+                    <div class="detail-card" style="padding: 24px; margin-bottom: 24px;">
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: var(--success);"></div>
+                                <div>
+                                    <div class="title">New Resource Uploaded</div>
+                                    <div class="time">"HTML5 & CSS3 Notes" • Today, 09:30 AM</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: var(--primary);"></div>
+                                <div>
+                                    <div class="title">New Student Registered</div>
+                                    <div class="time">Dev Padaliya (Roll: 92610120057) • Yesterday</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: var(--accent);"></div>
+                                <div>
+                                    <div class="title">Course Syllabus Updated</div>
+                                    <div class="time">WT-301: Added Unit 4 Topics • 2 days ago</div>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-dot" style="background: var(--warning);"></div>
+                                <div>
+                                    <div class="title">Quiz Test Bank Refreshed</div>
+                                    <div class="time">Added 5 Web Tech Questions • 3 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Information Box -->
+                    <div class="detail-card" style="padding: 24px;">
+                        <h4 style="margin-bottom: 12px; font-size: 1rem;">Platform Status</h4>
+                        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 0.8125rem;">
+                            <div style="display: flex; justify-content: space-between;">
+                                <span class="text-muted">Storage Usage</span>
+                                <span style="font-weight: 700;">14.2 MB / 500 MB</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 15%;"></div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-top: 8px;">
+                                <span class="text-muted">Platform Architecture</span>
+                                <span style="font-weight: 700; color: var(--success);">Pure HTML5 & CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

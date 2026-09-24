@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Quiz Assessment | Learner-Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon">LV</div>
+                <div>Learner-<span>Vault</span></div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="resources.html">Resources</a>
+                <a href="quiz.html" class="active">Quiz</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="dashboard.html" class="btn btn-outline btn-sm">Dashboard</a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Quiz Header -->
+    <section class="section-padding" style="padding-bottom: 20px;">
+        <div class="container container-narrow">
+            <div class="section-header" style="margin-bottom: 32px;">
+                <span class="tag">Knowledge Evaluation</span>
+                <h2>Web Technology Practice Assessment</h2>
+                <p>Test your understanding of core HTML5 semantics, CSS layout concepts, and web standards.</p>
+            </div>
+
+            <!-- Quiz Status Card -->
+            <div class="stat-box"
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; background: var(--bg-surface); padding: 18px 24px;">
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <span class="badge badge-purple">5 Questions</span>
+                    <span style="font-size: 0.875rem; color: var(--text-muted);">Topic: HTML5 & CSS3</span>
+                </div>
+                <div style="font-size: 0.875rem; font-weight: 700; color: var(--primary);">Self-Paced Assessment</div>
+            </div>
+
+            <form action="#result" method="get">
+                <!-- Question 1 -->
+                <div class="quiz-card">
+                    <div class="quiz-question-header">
+                        <span class="badge badge-purple">Question 1 of 5</span>
+                        <span style="font-size: 0.8125rem; color: var(--text-muted);">1 Mark</span>
+                    </div>
+                    <div class="quiz-question-title">Which HTML5 element is most appropriate for containing the main
+                        navigation links of a website?</div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="a" required>
+                            <span>&lt;navigation&gt;</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="b">
+                            <span>&lt;nav&gt; (Correct Semantic Tag)</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="c">
+                            <span>&lt;menu-bar&gt;</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q1" value="d">
+                            <span>&lt;header-links&gt;</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="quiz-card">
+                    <div class="quiz-question-header">
+                        <span class="badge badge-purple">Question 2 of 5</span>
+                        <span style="font-size: 0.8125rem; color: var(--text-muted);">1 Mark</span>
+                    </div>
+                    <div class="quiz-question-title">In the CSS Box Model, what is the space between the content
+                        boundary and the element border called?</div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="a" required>
+                            <span>Margin</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="b">
+                            <span>Padding</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="c">
+                            <span>Outline</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q2" value="d">
+                            <span>Gutter</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="quiz-card">
+                    <div class="quiz-question-header">
+                        <span class="badge badge-purple">Question 3 of 5</span>
+                        <span style="font-size: 0.8125rem; color: var(--text-muted);">1 Mark</span>
+                    </div>
+                    <div class="quiz-question-title">Which CSS Flexbox property is used to align items along the
+                        cross-axis of the container?</div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="a" required>
+                            <span>justify-content</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="b">
+                            <span>align-items</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="c">
+                            <span>flex-direction</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q3" value="d">
+                            <span>flex-wrap</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="quiz-card">
+                    <div class="quiz-question-header">
+                        <span class="badge badge-purple">Question 4 of 5</span>
+                        <span style="font-size: 0.8125rem; color: var(--text-muted);">1 Mark</span>
+                    </div>
+                    <div class="quiz-question-title">Which CSS unit represents a fraction of the available free space in
+                        a CSS Grid container?</div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="a" required>
+                            <span>rem</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="b">
+                            <span>fr</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="c">
+                            <span>vh</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q4" value="d">
+                            <span>em</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="quiz-card">
+                    <div class="quiz-question-header">
+                        <span class="badge badge-purple">Question 5 of 5</span>
+                        <span style="font-size: 0.8125rem; color: var(--text-muted);">1 Mark</span>
+                    </div>
+                    <div class="quiz-question-title">Which HTML attribute specifies that an input field must be filled
+                        out before submitting the form?</div>
+                    <div class="quiz-options">
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="a" required>
+                            <span>validate="true"</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="b">
+                            <span>mandatory</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="c">
+                            <span>required</span>
+                        </label>
+                        <label class="quiz-option">
+                            <input type="radio" name="q5" value="d">
+                            <span>check</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Action Button -->
+                <div style="display: flex; gap: 16px; justify-content: flex-end; margin-bottom: 40px;">
+                    <a href="quiz.html" class="btn btn-outline">Reset Options</a>
+                    <button type="submit" class="btn btn-primary">Submit Answers ✓</button>
+                </div>
+            </form>
+
+            <!-- Quiz Result Preview Box -->
+            <div id="result" class="hero-card text-center" style="margin-top: 24px;">
+                <div class="feature-icon"
+                    style="margin: 0 auto 16px; background: var(--success-light); color: var(--success); font-size: 2rem;">
+                    🏆</div>
+                <h2>Assessment Complete</h2>
+                <p style="margin-bottom: 24px;">Your responses have been recorded. Practice regularly to master Web
+                    Technology concepts.</p>
+                <div class="hero-stats-row">
+                    <div class="stat-box">
+                        <div class="num" style="color: var(--success);">5/5</div>
+                        <div class="lbl">Questions Answered</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="num" style="color: var(--primary);">100%</div>
+                        <div class="lbl">Accuracy Rate</div>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 12px; justify-content: center;">
+                    <a href="dashboard.html" class="btn btn-primary">Back to Dashboard</a>
+                    <a href="courses.html" class="btn btn-outline">Review Syllabus</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <div class="brand-icon">LV</div>
+                        <div>Learner-<span>Vault</span></div>
+                    </div>
+                    <p style="font-size: 0.875rem;">A clean, student-centric academic repository built with pure HTML
+                        and CSS.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Student Portal</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Administration</h4>
+                    <ul>
+                        <li><a href="admin-dashboard.html">Admin Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-bottom">
+                        <span>&copy; 2026 Learner-Vault • Course Catalog</span>
+                        <a href="dashboard.html" class="btn btn-outline btn-sm">Back to Dashboard</a>
+                    </div>
+                </div>
+            </footer>
+
+
+</body>
+
+</html>

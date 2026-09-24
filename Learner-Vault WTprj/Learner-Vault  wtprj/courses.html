@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Catalog | Learner-Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="brand-icon">LV</div>
+                <div>Learner-<span>Vault</span></div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="resources.html">Resources</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="dashboard.html">Dashboard</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="profile.html" class="btn btn-outline btn-sm">My Profile</a>
+                <a href="login.html" class="btn btn-ghost btn-sm">Sign Out</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="section-padding" style="padding-bottom: 24px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">Academic Catalog</span>
+                <h2>Course Syllabi & Curriculum</h2>
+                <p>Select your semester courses to access lecture modules, reference material, and practice tests.</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="filter-bar">
+                <a href="courses.html" class="filter-btn active">All Subjects</a>
+                <a href="#web" class="filter-btn">Web Tech</a>
+                <a href="#programming" class="filter-btn">Programming</a>
+                <a href="#database" class="filter-btn">Database</a>
+                <a href="#dsa" class="filter-btn">Data Structures</a>
+                <a href="#systems" class="filter-btn">Systems</a>
+            </div>
+
+            <!-- Course Catalog Grid -->
+            <div class="course-grid">
+
+                <!-- 1. Web Technology -->
+                <div class="course-card" id="web">
+                    <div class="course-card-banner banner-purple">
+                        <div class="top-row">
+                            <span class="badge" style="background: rgba(255,255,255,0.2); color: #fff;">Web Tech</span>
+                            <span>Semester 6</span>
+                        </div>
+                        <div class="course-code">WT-301</div>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-meta">
+                            <span>⏱️ 40 Hours • 24 Topics</span>
+                            <span>⭐ 4.8</span>
+                        </div>
+                        <h3 class="course-title">Web Technology & Design</h3>
+                        <p class="course-instructor">Prof. Sarah Jenkins</p>
+                        <p class="course-desc">HTML5 semantic structure, CSS3 responsive grid layouts, Flexbox, form
+                            handling, and web standards.</p>
+                        <div class="course-progress-wrap">
+                            <div class="course-progress-header">
+                                <span>Course Completion</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-primary btn-full btn-sm">View Syllabus →</a>
+                    </div>
+                </div>
+
+                <!-- 2. Java Programming -->
+                <div class="course-card" id="programming">
+                    <div class="course-card-banner banner-blue">
+                        <div class="top-row">
+                            <span class="badge"
+                                style="background: rgba(255,255,255,0.2); color: #fff;">Programming</span>
+                            <span>Semester 5</span>
+                        </div>
+                        <div class="course-code">JAVA-204</div>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-meta">
+                            <span>⏱️ 36 Hours • 20 Topics</span>
+                            <span>⭐ 4.9</span>
+                        </div>
+                        <h3 class="course-title">Java OOP & Architecture</h3>
+                        <p class="course-instructor">Dr. Robert Chen</p>
+                        <p class="course-desc">Object-Oriented Design, inheritance, abstract classes, interfaces, Java
+                            Collections, and exception handling.</p>
+                        <div class="course-progress-wrap">
+                            <div class="course-progress-header">
+                                <span>Course Completion</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-primary btn-full btn-sm">View Syllabus →</a>
+                    </div>
+                </div>
+
+                <!-- 3. Database Systems -->
+                <div class="course-card" id="database">
+                    <div class="course-card-banner banner-cyan">
+                        <div class="top-row">
+                            <span class="badge" style="background: rgba(255,255,255,0.2); color: #fff;">Database</span>
+                            <span>Semester 5</span>
+                        </div>
+                        <div class="course-code">DBMS-105</div>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-meta">
+                            <span>⏱️ 32 Hours • 18 Topics</span>
+                            <span>⭐ 4.7</span>
+                        </div>
+                        <h3 class="course-title">Database Systems & SQL</h3>
+                        <p class="course-instructor">Prof. R. N. Iyer</p>
+                        <p class="course-desc">Relational models, ER diagrams, normalization (1NF, 2NF, 3NF, BCNF), SQL
+                            queries, and transactions.</p>
+                        <div class="course-progress-wrap">
+                            <div class="course-progress-header">
+                                <span>Course Completion</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-primary btn-full btn-sm">View Syllabus →</a>
+                    </div>
+                </div>
+
+                <!-- 4. Data Structures -->
+                <div class="course-card" id="dsa">
+                    <div class="course-card-banner banner-indigo">
+                        <div class="top-row">
+                            <span class="badge"
+                                style="background: rgba(255,255,255,0.2); color: #fff;">Algorithms</span>
+                            <span>Semester 4</span>
+                        </div>
+                        <div class="course-code">DSA-201</div>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-meta">
+                            <span>⏱️ 45 Hours • 28 Topics</span>
+                            <span>⭐ 4.9</span>
+                        </div>
+                        <h3 class="course-title">Data Structures & Algorithms</h3>
+                        <p class="course-instructor">Er. Vikram Sengupta</p>
+                        <p class="course-desc">Arrays, linked lists, stacks, queues, binary search trees, graph
+                            algorithms, and Big-O time complexity.</p>
+                        <div class="course-progress-wrap">
+                            <div class="course-progress-header">
+                                <span>Course Completion</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-primary btn-full btn-sm">View Syllabus →</a>
+                    </div>
+                </div>
+
+                <!-- 5. Python Programming -->
+                <div class="course-card">
+                    <div class="course-card-banner banner-green">
+                        <div class="top-row">
+                            <span class="badge"
+                                style="background: rgba(255,255,255,0.2); color: #fff;">Programming</span>
+                            <span>Semester 4</span>
+                        </div>
+                        <div class="course-code">PY-102</div>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-meta">
+                            <span>⏱️ 28 Hours • 16 Topics</span>
+                            <span>⭐ 4.8</span>
+                        </div>
+                        <h3 class="course-title">Python Core & Data Analysis</h3>
+                        <p class="course-instructor">Dr. Anita Desai</p>
+                        <p class="course-desc">Core syntax, data types, file handling, modules, list comprehensions, and
+                            introduction to data structures.</p>
+                        <div class="course-progress-wrap">
+                            <div class="course-progress-header">
+                                <span>Course Completion</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-primary btn-full btn-sm">View Syllabus →</a>
+                    </div>
+                </div>
+
+                <!-- 6. Operating Systems -->
+                <div class="course-card" id="systems">
+                    <div class="course-card-banner banner-orange">
+                        <div class="top-row">
+                            <span class="badge" style="background: rgba(255,255,255,0.2); color: #fff;">Systems</span>
+                            <span>Semester 5</span>
+                        </div>
+                        <div class="course-code">OS-302</div>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-meta">
+                            <span>⏱️ 34 Hours • 22 Topics</span>
+                            <span>⭐ 4.6</span>
+                        </div>
+                        <h3 class="course-title">Operating System Fundamentals</h3>
+                        <p class="course-instructor">Prof. K. Mehta</p>
+                        <p class="course-desc">Process scheduling, inter-process communication, memory paging,
+                            segmentation, file systems, and deadlocks.</p>
+                        <div class="course-progress-wrap">
+                            <div class="course-progress-header">
+                                <span>Course Completion</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <a href="course-details.html" class="btn btn-primary btn-full btn-sm">View Syllabus →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <div class="brand-icon">LV</div>
+                        <div>Learner-<span>Vault</span></div>
+                    </div>
+                    <p style="font-size: 0.875rem;">A clean, student-centric academic repository built with pure HTML
+                        and CSS.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Student Portal</h4>
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Administration</h4>
+                    <ul>
+                        <li><a href="admin-dashboard.html">Admin Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-bottom">
+                        <span>&copy; 2026 Learner-Vault • Course Catalog</span>
+                        <a href="dashboard.html" class="btn btn-outline btn-sm">Back to Dashboard</a>
+                    </div>
+                </div>
+            </footer>
+
+</body>
+
+</html>
